@@ -1,12 +1,18 @@
 # module-3-challenge
-Employee Payroll Tracker
+## Employee Payroll Tracker
 This week's Challenge requires you to modify starter code to create an application that enables a payroll manager to view and manage employee payroll data. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-User Story
+User Story<br />
+
+```
 AS A payroll manager
 I WANT AN employee payroll tracker
 SO THAT I can see my employees' payroll data and properly budget for the company
-Acceptance Criteria
+```
+
+Acceptance Criteria<br />
+
+```
 GIVEN an employee payroll tracker
 WHEN I click the "Add employee" button
 THEN I am presented with a series of prompts asking for first name, last name, and salary
@@ -17,16 +23,30 @@ THEN I am prompted to add a new employee
 WHEN I choose to cancel
 THEN my employee data is displayed on the page sorted alphabetically by last name, and the console shows computed and aggregated data
 Mock-Up
-The following images show the web application's appearance and functionality:
+```
 
-Animation shows input of employees to an employee payroll tracker.
+## Getting Started
+You will be responsible for filling out the following functions:<br />
 
-Image showing employee information in the console of an employee payroll tracker.
+```
+collectEmployees:
+```
 
-Getting Started
-You will be responsible for filling out the following functions:
+This function will allow a user to add multiple employees to display on the page. The user will need to enter the first name, last name, and salary of each employee, then have the option to keep adding employees until they choose to stop. <br />
 
-collectEmployees: This function will allow a user to add multiple employees to display on the page. The user will need to enter the first name, last name, and salary of each employee, then have the option to keep adding employees until they choose to stop. A while loop will be needed here (MDN Web Docs on while loopsLinks to an external site.) The salary will need to be entered as a number, otherwise it should default to $0. The isNaN function can help with this: (MDN Web Docs on isNaNLinks to an external site.) This function should return an array of objects, like the following example. Reference the MDN Web Docs on returnLinks to an external site.:
+```
+while
+```
+
+loop will be needed here. The salary will need to be entered as a number, otherwise it should default to $0. The <br />
+
+```
+isNaN
+```
+
+function can help with this. This function should return an array of objects, like the following example:
+
+```
     [
         {
             firstName:"John",
@@ -39,30 +59,76 @@ collectEmployees: This function will allow a user to add multiple employees to d
             salary:54321
         }
     ]
-displayAverageSalary: This function will take in the generated array of employees and log the average salary and number of employees to the console. You should use a template literal string for this task.
+```
 
-getRandomEmployee: This function will take in the generated array of employees, randomly select one employee, and use a template literal to log their full name to the console. The built in Math object can help with random number generation: (MDN Web Docs on Math.randomLinks to an external site.)
+```
+displayAverageSalary
+```
 
-The provided starter code includes the displayEmployees and trackEmployeeData functions. These functions are complete and working. You do not have to modify any code for the following functions:
+This function will take in the generated array of employees and log the average salary and number of employees to the console. <br />
+You should use a template literal string for this task.
 
-displayEmployees: This function will take in an array of employees and render each employee to an HTML table.
+```
+getRandomEmployee
+```
 
-trackEmployeeData: This function will execute when the "Add Employees" button is clicked. It will take the array generated in your collectEmployees function, sort the employees by last name, and place them on a table on the page using the provided displayEmployees function. Additionally, the function will execute the displayAverageSalary function to log the average employee salary to the console, and execute the getRandomEmployee function to log a random employees information to the console.
+This function will take in the generated array of employees, randomly select one employee, and use a template literal to log their <br />
+full name to the console. The built in 
 
-This is an autograded assignment, meaning that you will follow the link below to open the assignment in a new window in the Ed platform. You will modify the existing starter code files to meet the requirements listed below.
+```
+Math
+```
 
-note
-If you need any assistance with the Ed platform, please review the information on submitting assignments in Module 0.
+object can help with random number generation:<br />
 
-Grading Requirements
-This Challenge is graded based on the following criteria:
+You do not have to modify any code for the following functions:<br />
 
-Function to Collect Employees 40%
-The collectEmployees() function must implement the following:
+```
+displayEmployees
+```
 
-Create a new employee object by collecting first name, last name, and salary using prompt(). (20 points)
+This function will take in an array of employees and render each employee to an HTML table.<br />
 
-Create multiple employee objects by collecting first name, last name, and salary for each employee using prompt() and confirm(). (20 points)
+```
+trackEmployeeData
+```
+
+This function will execute when the "Add Employees" button is clicked. It will take the array generated in your <br />
+
+```
+collectEmployees function
+```
+
+ sort the employees by last name, and place them on a table on the page using the provided <br />
+ 
+```
+displayEmployees
+```
+
+function. Additionally, the function will execute the <br />
+
+```
+displayAverageSalary
+```
+
+function to log the average employee salary to the console, and execute the <br />
+
+```
+getRandomEmployee
+```
+
+function to log a random employees information to the console.
+
+## Grading Requirements
+This Challenge is graded based on the following criteria:<br />
+
+Function to Collect Employees 40%<br />
+The collectEmployees() function must implement the following:<br />
+
+Create a new employee object by collecting first name, last name, and salary using prompt(). (20 points)<br />
+
+Create multiple employee objects by collecting first name, last name, and salary for each employee using prompt() and confirm(). (20 points)<br />
+<br />
 
 Function to Display Average Salary 30%
 The displayAverageSalary() function must implement the following:
