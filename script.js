@@ -27,7 +27,7 @@ const collectEmployees = function() {
   }
 
   // Display the collected employee data on the page
-  const addEmployeesBtn = document.querySelector('#add-employees-btn');
+  const employeeList = document.querySelector('#employee-list');
   employees.forEach(employee => {
     const employeeItem = document.createElement('li');
     employeeItem.textContent = `${employee.firstName} ${employee.lastName} - $${employee.salary.toFixed(2)}`;
